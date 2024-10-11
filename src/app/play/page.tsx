@@ -56,7 +56,7 @@ export default function GamePlay() {
         return true;
       return false;
     };
-  }, [whichHolesMoleShowed, mouseOverIndex]);
+  }, [whichHolesMoleShowed, mouseOverIndex, isLevelGod]);
 
   function onClickBackToHome() {
     if (!isWin) return push(PAGE_URL.HOME);
@@ -95,7 +95,7 @@ export default function GamePlay() {
           description={`Time: <strong>${timer} seconds</strong> <br/> Catch Attempt: <strong>${catchCounter} times</strong> <br/> Score: <strong>${calculateScore(
             { attempt: catchCounter, time: timer, level }
           )} points</strong> <br/> <br/>your score will be stored in scoreboard, ask someone to beat your score. <br/>Thanks for playing!`}
-          ctas={[<Button onClick={onClickBackToHome}>Check Scoreboard</Button>]}
+          ctas={[<Button key={1} onClick={onClickBackToHome}>Check Scoreboard</Button>]}
         />
 
         {/* Lose Modal */}
@@ -103,7 +103,7 @@ export default function GamePlay() {
           isOpen={isLose}
           title="Game Over, you lose the game!"
           description={`Time: <strong>${timer} seconds</strong> <br/> Catch Attempt: <strong>${catchCounter} times</strong> <br/>your score will be not stored in scoreboard, try again next time. <br/>Thanks for playing!`}
-          ctas={[<Button onClick={onClickBackToHome}>Back to Home</Button>]}
+          ctas={[<Button key={1} onClick={onClickBackToHome}>Back to Home</Button>]}
         />
 
         {/* Prank Modal */}
@@ -111,7 +111,7 @@ export default function GamePlay() {
           isOpen={isPrank}
           title="Hahaha, you just got pranked!"
           description={`There's no way somebody can beat this, because the mole is hard to catch programmatically. Have a nice day and thanks for playing!`}
-          ctas={[<Button onClick={onClickBackToHome}>Back to Home</Button>]}
+          ctas={[<Button key={1} onClick={onClickBackToHome}>Back to Home</Button>]}
         />
       </div>
     </motion.div>

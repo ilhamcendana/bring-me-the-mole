@@ -20,7 +20,7 @@ const initialState: IState = {
 
 export const useUserStore = create(
   persist<IState & IMethod>(
-    (set, get) => ({
+    (set) => ({
       ...initialState,
       //
       // Method

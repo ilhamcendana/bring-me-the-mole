@@ -72,7 +72,7 @@ export default function useMoleEngine() {
     debounce(() => {
       isMolePausedSet(false);
     }, 100),
-    []
+    [isMolePaused]
   );
 
   function itsJustaPrank() {
