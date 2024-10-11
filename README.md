@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## **README.md**
 
-## Getting Started
+### **Bring Me The Mole**
 
-First, run the development server:
+**A fun and addictive mole-catching game built with Next.js!**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### **Features**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Four Difficulty Levels:** Choose from Easy, Medium, Hard, and God modes to challenge yourself.
+* **Leaderboard:** Track your score and compare it with friends or other players.
+* **Offline Gameplay:** Enjoy the game without an internet connection.
+* **Local Data Storage:** Your scores are saved locally on your browser for easy access.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### **How to Play**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Choose a Difficulty Level:** Select the mode that best suits your skills.
+2.  **Catch the Moles:** Tap on the moles that appear randomly on the screen.
+3.  **Track Your Score:** Keep an eye on your score and try to beat your high score.
+4.  **Check the Leaderboard:** After completing a game, view your rank and compare it with others.
 
-## Learn More
+#### **Technologies Used**
 
-To learn more about Next.js, take a look at the following resources:
+* **Next.js**
+* **Typescript**
+* **SCSS**
+* **Framer Motion**
+* **Zustand**
+* **Tailwind**
+* **[Other technologies used, e.g., JavaScript, CSS, HTML]**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### **Getting Started**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/ilhamcendana/bring-me-the-mole
+    ```
+2.  **Navigate to the Project Directory:**
+    ```bash
+    cd bring-me-the-mole
+    ```
+3.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+    or
+    ```bash
+    yarn install
+    ```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.  **Run the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    yarn dev
+    ```
+**Enjoy catching moles and climbing the leaderboard!**
+###### By the way, it also have prank level called "GOD" level, Try it!**
