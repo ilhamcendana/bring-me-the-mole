@@ -2,7 +2,7 @@
 
 ### **Bring Me The Mole**
 
-**A fun and addictive mole-catching game built with Next.js!**
+**[DEMO](https://bring-me-the-mole.vercel.app/)**
 
 #### **Features**
 
