@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import BackgroundGame from "../components/misc/BackgroundGame/BackgroundGame";
@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   description: "Let's see if your clicking mouse game can beat this game.",
 };
 
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width',
+  userScalable:false,
+  maximumScale:1,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,8 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
