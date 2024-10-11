@@ -42,7 +42,7 @@ export default function Scoreboard() {
             <p>No data</p>
           </div>
         ) : (
-          <div className="h-[500px] overflow-auto pr-4">
+          <div className="h-[350px] lg:h-[500px] overflow-auto pr-4">
             {scoreboardSorted.map((item, i) => (
               <div
                 key={`${item.username}_${i}`}
