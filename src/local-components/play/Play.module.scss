@@ -1,0 +1,46 @@
+@import "../../styles/animations";
+
+.mole_container {
+  @apply w-full h-screen;
+
+  .container {
+    @apply w-full h-[50%] flex flex-col justify-end items-center;
+
+    .game_box {
+      @apply bg-amber-800 flex flex-col justify-center max-w-sm w-full min-h-44 rounded-2xl border-2 border-amber-500 drop-shadow-lg p-4 gap-6;
+
+      .game_info {
+        @apply text-center;
+
+        .game_info_text {
+          @apply text-white text-lg;
+        }
+      }
+
+      .start_info {
+        @apply flex flex-col gap-6;
+
+        .greeting {
+          @apply text-white text-lg font-bold;
+        }
+      }
+    }
+  }
+
+  .mole_container_inner {
+    @apply absolute left-0 top-[60%] bottom-0 right-0 flex items-center;
+
+    .inner_container {
+      @apply mx-auto w-full flex flex-wrap gap-8 justify-center;
+
+      .mole {
+        @apply bg-orange-950 w-28 h-28 rounded-full shadow-2xl flex justify-center items-center cursor-pointer;
+
+        img {
+          @include popUp(.3s);
+          animation: popIn .3s;
+        }
+      }
+    }
+  }
+}

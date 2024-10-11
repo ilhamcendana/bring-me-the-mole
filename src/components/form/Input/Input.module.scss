@@ -1,0 +1,19 @@
+$border-radius: 5px;      
+$transition-time: 0.3s;  
+
+.input_container {
+  @apply relative flex flex-col gap-2;
+
+  input {
+    @apply w-full px-4 py-2 rounded-md text-sm border;
+
+    &:focus {
+      @apply stroke-none outline-none border-amber-500;
+    }
+  }
+
+  // Optional: Add a label
+  label {
+   @apply font-medium text-sm;
+  }
+}

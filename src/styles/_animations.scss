@@ -1,0 +1,53 @@
+@mixin fade($duration: 0.5s, $timing: ease-in-out) {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  &.fade-in {
+    animation: fadeIn $duration $timing forwards;
+  }
+
+  &.fade-out {
+    animation: fadeOut $duration $timing forwards;
+  }
+}
+
+
+@mixin popUp($duration: 0.5s, $timing: ease-in-out) {
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      scale: 0;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes popOut {
+    0% {
+      opacity: 1;
+      scale: 1;
+    }
+    100% {
+      opacity: 0;
+      scale: 0;
+    }
+  }
+}
+

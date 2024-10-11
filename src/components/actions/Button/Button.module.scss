@@ -1,0 +1,18 @@
+.button {
+  @apply rounded-md text-sm px-4 font-semibold py-1 transition-all;
+
+  &:disabled {
+    @apply opacity-60;
+  }
+
+  &.primary {
+    @apply bg-amber-600 text-white;
+  }
+  &.outlined {
+    @apply bg-transparent text-amber-600 border border-amber-600;
+  }
+
+  &.block {
+    @apply w-full;
+  }
+}

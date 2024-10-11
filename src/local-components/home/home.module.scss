@@ -1,0 +1,8 @@
+.container_idle {
+  @apply flex flex-col gap-2 max-w-sm w-full;
+
+
+  .idle_item {
+    @apply flex flex-col gap-4 bg-white bg-opacity-45 p-4 rounded-lg items-center;
+  }
+}

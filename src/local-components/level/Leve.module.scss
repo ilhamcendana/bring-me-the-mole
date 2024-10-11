@@ -1,0 +1,18 @@
+.level_container {
+  @apply grid grid-cols-4 gap-4;
+}
+
+.level_item {
+  @apply flex justify-center items-center bg-amber-400 border-4 border-amber-800 px-4 py-2 rounded-full text-sm transition-all;
+
+  &:hover {
+    @apply scale-[1.1] border-2;
+  }
+  &:active {
+    @apply scale-[1] border-4;
+  }
+}
+
+.level_container:hover .level_item:not(:hover) {
+  @apply opacity-50;
+}
