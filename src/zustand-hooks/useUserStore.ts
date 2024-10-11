@@ -2,12 +2,12 @@ import { LEVEL } from "@/utils/constants";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
-interface IState {
+export interface IState {
   username: string | null;
   level: LEVEL;
 }
 
-interface IMethod {
+export interface IMethod {
   setUsername: (username: string) => void;
   setLevel: (level: LEVEL) => void;
   reset: () => void;
