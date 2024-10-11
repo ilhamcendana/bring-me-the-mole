@@ -32,7 +32,7 @@ export default function Scoreboard() {
     push(PAGE_URL.HOME);
   }
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full h-screen flex items-center justify-center px-4">
       <div className="max-w-md w-full bg-white border border-amber-700 rounded-xl py-4 pl-4">
         <h1 className="text-4xl text-amber-700 font-bold text-center mb-8 pr-4">
           Scoreboard
