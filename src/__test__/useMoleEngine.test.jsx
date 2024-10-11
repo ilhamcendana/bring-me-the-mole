@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useMoleEngine from './useMoleEngine'; // Adjust the import path as needed
+import useMoleEngine from './useMoleEngine';
 import { useUserStore } from '@/zustand-hooks/useUserStore';
 
 // Mock the Zustand store
@@ -41,7 +41,7 @@ describe('useMoleEngine', () => {
     const { result } = renderHook(() => useMoleEngine());
 
     act(() => {
-      result.current.onCatchMole(1); // Assuming 1 is a valid index
+      result.current.onCatchMole(1); 
     });
 
     expect(result.current.catchCounter).toBe(1);
@@ -51,8 +51,6 @@ describe('useMoleEngine', () => {
     const { result } = renderHook(() => useMoleEngine());
 
     act(() => {
-      // Simulate mole being shown in holes 0 and 1
-      // Simulating the state change correctly
       act(() => {
         (result.current).whichHolesMoleShowed = [0, 1]; 
       });
@@ -68,7 +66,7 @@ describe('useMoleEngine', () => {
     act(() => {
       (useUserStore).mockReturnValue({ level: 'GOD' });
       for (let i = 0; i < 10; i++) {
-        result.current.onCatchMole(1); // Assuming 1 is a valid index
+        result.current.onCatchMole(1); 
       }
     });
 
@@ -92,6 +90,4 @@ describe('useMoleEngine', () => {
     expect(result.current.isLose).toBe(true);
     jest.useRealTimers();
   });
-
-  // Additional tests can be added for further coverage
 });
